@@ -1,0 +1,727 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Banner */
+.header{
+    background-image: url(img/gym.jpg);
+    /* width:100%; */
+    height:85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top:0.5rem solid #fc9003;
+    border-bottom:0.5rem  solid #fc9003;
+ }
+h1 .border-bottom{
+    border-bottom: 4px solid #e21313;
+    color:rgb(234, 235, 236);
+    text-align: center;
+}
+p{
+    margin-top: 3rem;
+    color:skyblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: weight 50px;
+    font-size: 19px;
+}
+.btn{
+    padding: 0.5rem 1.5rem;
+    outline:none;
+    border:1px solid black;
+    cursor: pointer;
+}
+.btn-primary{
+     font-size: 18px;
+     font-family:Arial, Helvetica, sans-serif;
+     letter-spacing: 2px;
+     margin-top: 1.2rem;
+     margin-right:180px;
+     background-color:rgb(228, 91, 72);
+     font-weight: 700;
+     color:black;
+     font-weight: bold;
+     text-transform: uppercase;
+     border: radius 3px #d67c7c;
+     transition: all 0.5s linear;
+}
+.btn-primary:hover{
+    background-color: transparent;
+}
+
+
+/* FEATURED PRODUCTS */
+
+.section-p1 .h1{
+    border-bottom: 4px solid black;
+  }
+
+.title{
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    line-height: 60px;
+    color: deeppink;
+}
+.title::after{
+    content:'';
+    background:black;
+    width: 290px;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
+  }
+#product1{
+    text-align: center; 
+    background-image: url(img/rugved.avif);
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px ;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+.normal{
+
+    padding: 0.5rem 1.5rem;
+      outline:none;
+      border:1px solid black;
+      cursor: pointer;
+      background-color:lightcoral;
+      transition: all 0.5s;
+  }
+.fa fa-star checked{
+    color: #e21313;
+  }
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    /* border: 1px solid #cce7d0; */
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+  }
+#product1 .pro:hover{
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.577);
+  }
+#product1 .pro img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+  }
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+  }
+  
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+  
+  }
+  
+#product1 .pro .des h5{
+    padding: 7px;
+    color: #1a1a1a;
+    font-size: 14px ;
+  }
+  
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+  }
+  
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+  }
+  
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px; 
+    right: 10px;
+  }
+.pro:hover{
+    transform: translateY(-8px);
+  }
+
+
+  /* Welcome to Fitness Club */
+
+main{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    margin-top: 0px;
+      border-radius: 6px;
+  }
+.banner_slider{
+    width:90%;
+    margin-left: 80px;
+    padding-top: 30px;
+  }
+.banner_slider .slide{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(dhiraj.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    flex-shrink: 0;
+    box-shadow: 1px 2px 10px white;
+    overflow-x: auto;
+  }
+.banner_slider .slide_two{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(chest1.jpg);
+     box-shadow: 1px 2px 10px white;
+  
+  }
+.banner_slider .slide_three{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(rugved2.jpg);
+    box-shadow: 1px 2px 10px white;
+  }
+.slide_content{
+    color:#fff;
+    max-width: 800px;
+    padding: 37px 37px 0 37px;
+    border-width: 7px 7px 0 7px;
+    border-color: #ff6f00;
+    border-style: solid;
+  }
+.slide_content p{
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+.slide_content h2{
+    font-size: 40px;
+    line-height: 70px;
+    margin: 25px 0;
+  }
+  
+.slide_content .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #ff6f00;
+    padding: 10px 36px;
+    font-weight: 700px;
+    display: inline-block;
+    outline: 1px solid #ff6f00;
+    transition: 0.3s ease-in-out;
+    margin-left: 110px;
+  }
+.slide_content .btn:hover{
+    background-color: #fff;
+    color:#ff6f00;
+    outline-color: #fff;
+    outline-offset: 3px;
+  }
+
+
+ /* Exclusively Available On FIT-NESS CLUB Start  */
+
+.row1{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 40px;
+    /* background: radial-gradient(#fff,#ffd6d6);
+    height: 410px; */
+    width: 100%;
+    /* border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgrey; */
+  }
+.col-22{
+    flex-basis: 50%;
+    min-width: 300px;
+  }
+.col-22 img{
+    max-width: 100%;
+    padding: 50px 0;
+    /* margin-left: 130px; */
+    margin-top: 40px;
+  }
+.col-22 h1{
+    font-size: 80px;
+    line-height: 60px;
+    margin: 25px 0;
+    margin-right: 50px;
+    font-size: 40px;
+    margin-right: 80px;
+  
+  }
+.col-22 small{
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    color:darkslateblue;
+    margin-top: 0%;
+    
+  }
+.col-22 p{
+    font-size: large;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+.btn{
+    padding: 0.5rem 1.5rem;
+    outline:none;
+    border:1px solid black;
+    cursor: pointer;
+    
+  
+  }
+.btn_transparent{
+    display: inline-block;
+    background:#ff6f00;
+    color: #fff;
+    padding: 8px 40px;
+    border-radius: 30px;
+    /* margin-left: 180px; */
+  }
+
+
+/*  Testinomial */
+
+.small-cotainer{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+.row2{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+.col-33{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+.col-33{
+    width: 100%;
+  }
+  
+.col-33 p{
+    font-size: 13px;
+    font-weight: bold;
+    margin: 12px 0;
+  }
+.col-33 .star{
+    font-size:small;
+  }
+
+  .testimonial{
+    padding-top: 90px;
+  }
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.5s;
+    /* border: 4px solid lightcoral; */
+    border-radius: 8px;
+  }
+.testimonial .col-3 img{
+    width: 80px;
+    margin-top: 20px;
+    border-radius:50%;
+  }
+.testimonial .col-3:hover{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.504);
+    transform: translateY(-10px);
+  }
+.col-3 .star{
+    color: red;
+  }
+.fa.fa-quote-left{
+    color:#ff523b;
+    font-size: 25px;
+  }
+.col-3 h3{
+    font-weight: 600;
+    color: darkslateblue;
+  }
+
+
+  /* Brands */
+.row3{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+.brands{
+    margin: 70px auto;
+  }
+.col-4{
+    width: 150px;
+  }
+.col-4 img{
+    width:100%;
+    cursor: pointer;
+  }
+.section-p2 {
+    padding: 40px 80px;
+  }
+
+/* Product page */
+.btn1{
+  padding: 0.5rem 1.5rem;
+  outline:none;
+  border:1px solid black;
+  cursor: pointer;
+  background-color:rgb(228, 91, 72);
+  text-transform: uppercase;
+  border-radius:3px;
+  border: 0.5px solid #d67c7c;
+  transition: all 0.5s;
+  color:black;
+
+}
+.btn1 a{
+  text-decoration: none;
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-weight: bold;
+  
+}
+.btn1:hover{
+  background-color: transparent;
+  color: #e21313;
+}
+
+/* Cart */
+.row.cartRow{
+  display:flex;
+  align-items:center;
+  flex-wrap: wrap;
+  justify-content:center;
+  background: radial-gradient(#fff,#ffd6d6);
+  height: auto;
+  /* width: fit-content; */
+  margin-top: 5px;
+}
+.text-center input{
+  width: 52px;
+}
+.text-center button{
+  width: 70px;
+  padding: 0%;
+}
+.form-check-label {
+  color: red;
+}
+.btn-primary1{
+  font-size: 12px;
+  font-family:'Poppins', sans-serif;
+  margin-right:180px;
+  background-color:rgb(228, 91, 72);
+  font-weight:600px;
+  color:black;
+  text-transform:uppercase;
+  border-radius:5px;
+  border: 0.5px solid black;
+  width: 100px;
+  height: fit-content;
+  padding: 0;
+}
+.btn-primary1:hover{
+ background-color:solid orange;
+}
+
+/* OrderForm */
+
+.row.orderRow{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.orederLable{
+  margin-bottom: 10px;
+  /* padding: 5px; */
+  display: block;
+}
+.orderInput{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.orderIcon{
+  font-size: 18px;
+  color: #0a0a2a;
+  padding: 2px 5px 0px 0px;
+  transition: all 0.5s;
+  
+}
+.orderIcon:hover{
+  font-size: 18px;
+  color: #2e2ed4;
+  padding: 2px 5px 0px 0px;
+  
+}
+.orderContainer{
+  /* margin: 5px; */
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.orderbtn {
+  background-color: #de721a;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.orderbtn:hover {
+  background-color: #df5c04bf;
+  color: white;
+}
+
+
+/* Admin */
+
+.wrapper1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.adminContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  background:lightyellow;
+  box-shadow: 0 0 5px #999999;
+}
+/* .credit {
+  position: relative;
+  margin: 25px auto 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.credit a {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+} */
+
+.col-left,
+.col-right {
+  padding: 30px;
+  display: flex;
+}
+
+.col-left {
+  width: 60%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background: #44c7f5;
+}
+
+.col-right {
+  padding: 60px 30px;
+  width: 50%;
+  margin-left: -10%;
+}
+
+@media(max-width: 575.98px) {
+  .container {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .col-left,
+  .col-right {
+    width: 100%;
+    margin: 0;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .col-right {
+    padding: 30px;
+  }
+}
+
+.login-text {
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+}
+
+.login-text h2 {
+  margin: 0 0 15px 0;
+  font-size: 30px;
+  font-weight:bold;
+  color: black;
+}
+
+.login-text p {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight:bold;
+  line-height: 22px;
+  color: red;
+}
+
+.login-text .btn {
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+.login-text .btn:hover {
+  color: #44c7f5;
+  box-shadow: inset 150px 0 0 0 #ffffff;
+}
+
+.login-form {
+  position: relative;
+  width: 100%;
+}
+
+.login-form h2 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+}
+
+.login-form p {
+  margin: 0 0 10px 0;
+  text-align: left;
+  color: #666666;
+  font-size: 15px;
+}
+
+.login-form p:last-child {
+  margin: 0;
+  padding-top: 3px;
+}
+
+.login-form p a {
+  color: #44c7f5;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 2px;
+  letter-spacing: .5px;
+  color:black;
+}
+
+.login-form p:last-child label {
+  width: 60%;
+  float: left;
+}
+
+.login-form label span {
+  color: #ff574e;
+  padding-left: 4px;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  outline: none;
+  border: 2px solid #cccccc;
+  border-radius: 30px;
+}
+
+.login-form input:focus {
+  border-color: #ff574e;
+}
+
+.login-form button,
+.login-form input {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  color: darkred;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: transparent;
+  border: 2.3px solid #44c7f5;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 0 rebeccapurple;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+.login-form button:hover,
+.login-form input[type=submit]:hover {
+  color: #ffffff;
+  box-shadow: inset 250px 0 0 0 orange;
+}
