@@ -1,0 +1,86 @@
+product
+
+<?php           
+            if(isset($_POST['submit'])){
+              echo "<input name='product_name' type='text' id='p1' class='orderInput' readonly value=".$_SESSION['buy1n']." >";
+            }
+            else if(isset($_POST['submit'])){
+              echo "<input name='product_name' type='text' id='p2'class='orderInput'  readonly value=".$_SESSION['buy2n'].">";
+            }
+            else if(isset($_POST['submit3'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy3n'].">";
+            }
+            else if(isset($_POST['submit3'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy3n'].">";
+            }
+            else if(isset($_POST['submit4'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy4n'].">";
+            }
+            else if(isset($_POST['submit5'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy5n'].">";
+            }
+            else if(isset($_POST['submit6'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy6n'].">";
+            }
+            else if(isset($_POST['submit7'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy7n'].">";
+            }
+            else if(isset($_POST['submit8'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy8n'].">";
+            }
+            else if(isset($_POST['submit9'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy9n'].">";
+            }
+            else if(isset($_POST['submit10'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy10n'].">";
+            }
+            else if(isset($_POST['submit11'])){
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy11n'].">";
+            }
+                          
+            else{
+              echo "<input name='product_name' type='text' id='expyear' class='orderInput'  readonly value=".$_SESSION['buy1n'].">";
+            }
+          ?>
+
+price
+
+<?php
+          if(isset($_POST['submit']))
+          {
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy1p'].">";
+          }
+          else if(isset($_POST['submit'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy2p'].">";
+          }
+          else if(isset($_POST['submit3'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy3p'].">";
+          }
+          else if(isset($_POST['submit4'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy4p'].">";
+          }
+          else if(isset($_POST['submit5'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy5p'].">";
+          }
+          else if(isset($_POST['submit6'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy6p'].">";
+          }
+          else if(isset($_POST['submit7'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy7p'].">";
+          }
+          else if(isset($_POST['submit8'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy8p'].">";
+          }
+          else if(isset($_POST['submit9'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy9p'].">";
+          }
+          else if(isset($_POST['submit10'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy10p'].">";
+          }
+          else if(isset($_POST['submit11'])){
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy11p'].">";
+          }
+          else{
+            echo "<input type='text' id='expyear' name='product_price' class='orderInput'  readonly value=".$_SESSION['buy2p'].">";
+          }
+        ?>

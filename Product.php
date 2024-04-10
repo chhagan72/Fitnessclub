@@ -2,6 +2,29 @@
 session_start();
 error_reporting(0);
 include("navbar.php");
+
+$loggedIn = isset($_SESSION['user']);
+
+// Function to display the appropriate button based on login status
+function displayButton($loggedIn) {
+    if ($loggedIn) {
+        echo '<button class="normal" type="submit" name="AddToCart">Add To Cart</button>';
+    } else {
+        echo '<button class="btn1 btn1-primary"><a href="registration.php">Login</a></button>';
+    }
+}
+
+$logIn = isset($_SESSION['user']);
+
+// Function to display the appropriate button based on login status
+function displayButtonLoginLogout($logIn) {
+    if ($logIn) {
+        echo '<button class="btn1 btn1-primary"><a href="logout2.php">Logout</a></button>';
+    } else {
+        echo '<button class="btn1 btn1-primary"><a href="registration.php">Login</a></button>';
+    }
+}
+
 ?>
 
 <section id="product1" class="section-p1" style="color:red;">
@@ -12,9 +35,7 @@ include("navbar.php");
             </h2>
         </div>
         <div class=" mt-3 user d-flex justify-content-end">
-            <button class="btn1 btn1-primary">
-                <a href="logout2.php">Logout</a>
-            </button>
+            <?php displayButtonLoginLogout($logIn); ?>
         </div>
         <div class="col-xl-12 aproduct">
             <h1 class="title">ALL PRODUCTS</h1></b>
@@ -41,7 +62,7 @@ include("navbar.php");
                         <h4>&#8377; 200</h4><br>
 
                     </div>
-                    <button class="normal" id="1" type="submit" name="AddToCart">Add to Cart</button>
+                    <?php displayButton($loggedIn); ?>
                     <input type="hidden" name="Item_Name" value="PROTEIN SHAKER BOTTLE">
                     <input type="hidden" name="Price" value="200">
                     <?php
@@ -66,8 +87,7 @@ include("navbar.php");
                 </div>
                 <h4>&#8377; 1750</h4><br>
                 <div class="price"></div>
-                <button class="normal" id="2" type="submit" name="AddToCart" style="background-color:lightcoral">Add To
-                    Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="5 KG DUMB-BELL">
                 <input type="hidden" name="Price" value="1750">
 
@@ -96,7 +116,7 @@ include("navbar.php");
                 <h4>&#8377; 4000</h4><br>
 
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="NUTRITION COMBO PACK">
                 <input type="hidden" name="Price" value="4000">
                 <?php
@@ -122,7 +142,7 @@ include("navbar.php");
                 <h4>&#8377; 1200</h4><br>
 
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add to Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="WEIGHT GAINER">
                 <input type="hidden" name="Price" value="1200">
                 <?php
@@ -148,7 +168,7 @@ include("navbar.php");
                 <h4>&#8377; 40,000</h4><br>
 
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="THIGH MACHINE">
                 <input type="hidden" name="Price" value="40000">
                 <?php
@@ -175,7 +195,7 @@ include("navbar.php");
                 </div>
                 <h4>&#8377; 50,000</h4><br>
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="TREAD-MILL">
                 <input type="hidden" name="Price" value="50000">
                 <?php
@@ -200,7 +220,7 @@ include("navbar.php");
                 </div>
                 <h4>&#8377; 1500</h4><br>
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="BALANCE BALL">
                 <input type="hidden" name="Price" value="1500">
                 <?php
@@ -225,7 +245,7 @@ include("navbar.php");
                 </div>
                 <h4>&#8377; 35,000</h4><br>
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add to Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="ACTION AIR BIKE">
                 <input type="hidden" name="Price" value="35000">
                 <?php
@@ -250,7 +270,7 @@ include("navbar.php");
                 </div>
                 <h4>&#8377; 1400</h4><br>
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="THIGH MACHINE">
                 <input type="hidden" name="Price" value="40000">
                 <?php
@@ -275,7 +295,7 @@ include("navbar.php");
                 </div>
                 <h4>&#8377; 10000</h4><br>
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="T-BAR">
                 <input type="hidden" name="Price" value="10000">
                 <?php
@@ -301,7 +321,7 @@ include("navbar.php");
                 <h4>&#8377; 50000</h4><br>
 
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="CHEST MACHINE">
                 <input type="hidden" name="Price" value="50000">
                 <?php
@@ -327,7 +347,7 @@ include("navbar.php");
                 <h4>&#8377; 3500</h4><br>
 
                 <div class="price"></div>
-                <button class="normal" type="submit" name="AddToCart">Add To Cart</button>
+                <?php displayButton($loggedIn); ?>
                 <input type="hidden" name="Item_Name" value="PUNCH-BAG">
                 <input type="hidden" name="Price" value="3500">
                 <?php
