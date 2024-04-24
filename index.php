@@ -288,8 +288,8 @@ include("navbar.php")
 <!-- Exclusively Available On FIT-NESS CLUB Start -->
 
 <section>
-    <div class="container-fluid mt-5">
-    <div class="row row1 mt-5 justify-content-center">
+    <div class="container Exclusively">
+    <div class="row row1 justify-content-center">
             <div class="col-2 col-22 col-xl-4 col-lg-4 col-md-6 col-sm-12 justify-content-center">
                 <img src="img/exclusive.png" class="col2-img">
             </div>
@@ -306,7 +306,7 @@ include("navbar.php")
                     </small>
                     
                 </b> <br>
-                <button class="btn mt-3 btn_transparent ">
+                <button class="btn mt-5 btn_transparent ">
                         <a href="Product.php #buyp" >BUY NOW &#10132;</a>
                 </button>
             </div>
@@ -361,8 +361,8 @@ include("navbar.php")
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-o"></i>
                             </div>
-                            <img src="img/menomic3.png">
-                            <h3>Shreya Gajera</h3>
+                            <img src="img/dhiraj.png" height="110px">
+                            <h3>Dhiraj Lavhale</h3>
                         </div>
                     </div>
                 </div>

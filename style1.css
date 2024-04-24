@@ -254,8 +254,8 @@ main{
     flex-wrap: wrap;
     justify-content:center;
     margin-top: 40px;
-    /* background: radial-gradient(#fff,#ffd6d6);
-    height: 410px; */
+    /* background: radial-gradient(#fff,#ffd6d6); */
+    height: 410px; 
     width: 100%;
     /* border-top: 5px solid lightgray;
     border-bottom: 5px solid lightgrey; */
@@ -307,7 +307,6 @@ main{
     border-radius: 30px;
     /* margin-left: 180px; */
   }
-
 
 /*  Testinomial */
 
